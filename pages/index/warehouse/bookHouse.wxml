@@ -1,0 +1,25 @@
+<view class='input-board-view'>
+  <view>
+    <label>姓名:</label>
+    <input bindinput='bindName'></input>
+  </view>
+  <view>
+    <label>联系电话:</label>
+    <input type='number' bindinput='bindTel'></input>
+  </view>
+  <view>
+    <label>详细地址:</label>
+    <input value='{{address}}' bindinput='bindAddress'></input>
+  </view>
+  <view>
+    <label>有无电梯:</label>
+    <radio-group bindchange="liftChange">
+      <radio checked='true' value='10'>有</radio>
+      <radio value='20'>无</radio>
+    </radio-group>
+  </view>
+</view>
+<view class='next-board-view'>
+  <label class='fontRedColor normal-font-size'>预定有优惠</label>
+  <button class='submit-button' bindtap='commitAction'>提交</button>
+</view>

@@ -1,0 +1,160 @@
+@import "/utils/css/common.wxss";
+@import "/utils/css/warehouse.wxss";
+@import "/utils/css/fullReview.wxss";
+
+page {
+  font-size: 16px;
+}
+
+.header-info-board {
+  height: 30px;
+  display: flex;
+  background-color: #FFF5CE;
+  align-items: center;
+}
+
+.header-info-board>image {
+  height: 14px;
+  width: 14px;
+  margin-left: 12px;
+  flex: none;
+}
+
+.header-info-board>label {
+  flex: 1;
+  height: 10px;
+  line-height: 10px;
+  font-size: 10px;
+  color: #FF762E;
+  margin-left: 5px;
+}
+
+.device-list-board {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  height: 33px;
+  align-items:center;
+}
+
+.device-list-item {
+  display: flex;
+  align-content: center;
+}
+
+.device-list-item image {
+  height: 20px;
+  width: 20px;
+}
+
+.device-list-item label {
+  font-size: 12px;
+  margin-left: 2px;
+  color: #545454;
+  height: 20px;
+  line-height: 20px;
+}
+
+.store-tips-board {
+  background-color: #f7f7f7;
+  height: 30px;
+  display: flex;
+  align-content: center;
+}
+
+.store-tips {
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: block;
+  color: #FC5939;
+}
+
+.store-header-example-board {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.store-header-example-board image {
+  width: 12px;
+  height: 12px;
+  flex: none;
+  margin-left: 10px;
+}
+
+.store-tips-label{
+  font-size: 12px;
+  flex: 1;
+  margin-left: 5px;
+  color: #333333;
+}
+.estimate-button {
+  margin:10px 10px; 
+}
+
+.warhouse-info-board {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.pay-board-view {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.store-example-board-view>label {
+  margin: 10px;
+}
+
+.pay-tips {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 10px; 
+  display: block;
+}
+
+.pay-tab-board {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  font-size: 12px;
+}
+
+.pay-tab-board>view:first-child {
+  border-right: 1px solid #b2b2b2;
+}
+
+.pay-tab-board view {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-top: 1px solid #b2b2b2;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.pay-tab-board label {
+  color: #383838;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.pay-tab-board image {
+  width: 23px;
+  height: 23px;
+}
+
+.list-item-image {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display:inline-block;
+}

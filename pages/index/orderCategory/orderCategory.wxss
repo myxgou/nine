@@ -1,0 +1,47 @@
+@import "/utils/css/common.wxss";
+.category-tips {
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left:20px;
+  color: #353535
+}
+.type-estimation-board {
+  border-radius: 5rpx;
+  background-color: #09d679;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin-top: 20px;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.type-estimation-board label {
+  padding: 10px;
+}
+
+.describe-board {
+  margin: 10px 10px 10px 5%;
+  background-color: #ffffff;
+}
+
+.describe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #a9a9a9;
+  font-size: 14px;
+}
+
+.describe-content li {
+  line-height: 25px;
+}
+
+page {
+  background-color: #f4f4f4;
+}

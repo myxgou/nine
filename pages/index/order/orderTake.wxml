@@ -1,0 +1,23 @@
+<view class='order-info-board'>
+  <view>
+    <label>日期</label>
+    <picker mode='selector' range='{{dateRange}}' bindchange='selectDateChange'>
+      <view>{{orderDate}}</view>
+    </picker>
+  </view>
+  <view class='separate-thin-line'></view>
+  <view>
+    <label>时间段</label>
+    <picker mode='selector' range = '{{timeRange}}' bindchange='selectTimeChange'>
+      <view>{{orderTime}}</view>
+    </picker>
+  </view>
+  <view class='separate-thin-line'></view>
+  <view>
+    <label>备注信息</label>
+    <textarea confirm-type='done' placeholder='请输入备注信息'  bindinput='inputMarkInfoAction'/>
+  </view>
+</view>
+<view class='order-personinfo-tips'><label>提前预约前请前往个人中心完善</label><label bindtap='writePersonInfoAction' class='fontBlueColor'>个人信息</label></view>
+
+<button class='submit-button submit-button-position' bindtap='commitOrderAction'>提交</button>

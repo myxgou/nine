@@ -1,0 +1,13 @@
+<!--pages/user/storemanage/addSpace.wxml-->
+<view class='space-board'>
+
+  <image class='space-image' mode='aspectFit' bindtap='takePhotoAction' src='{{selectedUrl}}'></image>
+  <view class='space-input-board'>
+  <input class='space-input' bindinput='resetNameAction'  placeholder='请输入名称' confirm-type='done' value='{{name}}'></input>
+  </view>
+</view>
+<button  wx:if='{{isAdd}}' class='comfirm-button backgroundGreenColor' bindtap='confirmAddSpaceAction'>添加</button>
+<view wx:if='{{!isAdd}}' class='edit-board-view'>
+  <label bindtap='onEditAction' class='edit-label'>编辑</label>
+  <label bindtap='onDeleteAction' class='del-label'>删除</label>
+</view>

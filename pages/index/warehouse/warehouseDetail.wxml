@@ -1,0 +1,46 @@
+<import src="/utils/component/fullReview.wxml" />
+<import src="/utils/component/warehouse.wxml" />
+<view class='header-info-board'>
+  <image src='/images/common/brocast.png'></image><label>最高可享成交价的五折交付</label>
+</view>
+<view wx:if="{{isModel}}" class='warhouse-info-board'>
+  <template is="warehouse" data="{{...warehouse}}"></template>
+</view>
+<view class='separate-thin-line'></view>
+<view class='device-list-board'>
+<block wx:for-items='{{device}}' wx:for-item='item'>
+  <view class='device-list-item'>
+    <image src='/images/common/{{item.exist == 1 ? "checkbox-selected" : "checkbox-normal"}}.png'></image><label>{{item.title}}</label>
+  </view>
+</block>
+</view>
+
+<view class='separate-thin-line'></view>
+<view class='store-tips-board'>
+  <label class='store-tips'>※可根据所存物品大小及数量，自主选择各型号仓储。</label>
+</view>
+<!-- <button class='estimate-button submit-button' bindtap='estimateAction'>估算我需要的空间</button> -->
+<view class='separate-thin-line'></view>
+<view class='store-example-board-view'>
+  <view class='store-header-example-board'>
+    <image src='/images/common/others.png'></image><label class='store-tips-label'>存放空间举例</label>
+  </view>
+  <scroll-view scroll-x class='preview-list-scrollview' scroll-into-view='{{scrollToView}}'>
+    <block wx:for-items="{{reviewImages}}" wx:for-item="item">
+      <image bindtap='reviewAction' class='list-item-image' data-src='{{item}}' src='{{item}}' mode='aspectFit' data-index='{{index}}'></image>
+    </block>
+  </scroll-view>
+</view>
+<view class='pay-board-view'>
+  <label class='pay-tips fontRedColor'>最高可享成交价的五折支付</label>
+  <view class='pay-tab-board'>
+    <view bindtap='paymentAction'>
+      <image src='/images/common/payment.png'></image><label>优惠买单[{{discount}}折]</label>
+    </view>
+    <view bindtap='bookAction'>
+      <image src='/images/common/bookhouse.jpg'></image><label>预定仓位</label>
+    </view>
+  </view>
+</view>
+
+<template wx:if='{{isShowReview}}' is="fullReview" data="{{...reviewImage}}"></template>

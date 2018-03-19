@@ -1,0 +1,159 @@
+.warehouse-list-item {
+  position: relative;
+  height: 95px;
+}
+
+.box-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 95px;
+  margin: 5px 0;
+}
+
+.box-item>view:first-child {
+  margin-top: 5px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.box-item-base {
+  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  position: relative;
+}
+
+.box-item-cover {
+  width: 80px;
+  height: 80px;
+}
+
+.box-item-header {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  -webkit-box-flex: 1;
+}
+
+.box-item-info {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  position: relative;
+  top: -5px;
+}
+
+.box-item-info-board {
+  display: flex;
+}
+
+.box-item-info image {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+}
+
+.checkbox-board {
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-item-text {
+  font-size: 16px;
+  margin-left: 5px;
+  display: -webkit-box;
+  -webkit-orient: horizontal;
+}
+
+.box-item-text>label:last-child {
+  -webkit-box-flex: 1;
+  display: block;
+  text-align: right;
+}
+
+.arrow-right {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 35px;
+}
+
+.address-label {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.address-image {
+  width: 15px;
+  height: 15px;
+}
+
+.address-info-board-view {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.address-info-board-view>view {
+  display: flex;
+  align-items: center;
+}
+
+.header-thin-label {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.header-text-label {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.company-board-view {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff7ce;
+}
+
+.company-board-view>image {
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+}
+
+.company-board-view>label {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-left: 5px;
+  color: #fb7147;
+}
+
+.arrow-up-view {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff7ce;
+}

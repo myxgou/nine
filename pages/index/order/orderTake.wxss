@@ -1,0 +1,58 @@
+@import "/utils/css/common.wxss";
+page {
+  background-color: #f4f4f4;
+}
+
+.order-info-board {
+  background-color: white;
+}
+
+.order-info-board picker {
+  margin-top: 10px;
+  width: 190px;
+}
+
+.order-info-board label {
+  font-size: 16px;
+  margin: 10px;
+  margin-left: 0px;
+  width: 70px;
+}
+
+#baseinfoTip {
+  margin: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order-info-board>view {
+  margin:5px 10px;
+  display: flex;
+}
+
+.order-info-board>view:nth-last-child(2) {
+  margin: 0px;
+}
+
+.order-info-board>view:last-child {
+  height: 60px;
+}
+
+.submit-button-position {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  top: 10px;
+  margin: 0px;
+}
+
+textarea {
+  height: 40px;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.order-personinfo-tips {
+  margin:10px 0px 10px 10px;
+  font-size:12px;
+}

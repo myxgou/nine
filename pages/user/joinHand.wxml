@@ -1,0 +1,48 @@
+<view>
+
+  <view class='join-header-view'>
+    <view class='join-image-view'>
+      <image class='join-image' src='/images/joinhand/join-hand.png'></image>
+    </view>
+    <view class='join-header-info'>
+      <label>九平方米渠道合伙人入驻</label>
+      <label>合伙人通过九平方米的物品存储服务，既可以服务自己的客户群体，同时又能获取佣金分成结算</label>
+    </view>
+  </view>
+
+  <view class='input-info-view'>
+    <view class='input-item-view'>
+      <label>姓名</label>
+      <input placeholder='请填写联系人姓名' bindinput='bindName'></input>
+    </view>
+    <view class='input-item-view'>
+      <label>性别</label>
+      <radio-group bindchange="radioSexAction">
+        <radio checked='true' value='1'>先生</radio>
+        <radio value='2'>女士</radio>
+      </radio-group>
+    </view>
+    <view class='input-item-view'>
+      <label>电话</label>
+      <input placeholder='请填写联系人手机号码' bindinput='bindTel' type='idcard'></input>
+    </view>
+    <view class='input-item-view'>
+      <label>地址</label>
+      <input placeholder='请填写地址' bindinput='bindAddress'></input>
+    </view>
+    <view class='input-item-view'>
+      <label>行业</label>
+      <input placeholder='请选择' disabled='true' bindtap='chooseBuiness' value='{{busniess}}'></input>
+    </view>
+    <view class='input-item-view'>
+      <label>公司名</label>
+      <input placeholder='请填写公司名' bindinput='bindCompany'></input>
+    </view>
+  </view>
+  <view class='rights-view'>
+  <checkbox-group bindchange="checkAction">
+  <checkbox value='1'></checkbox>
+  </checkbox-group>
+  <label>阅读并同意《渠道合作协议》</label></view>
+  <button class='comfirm-button backgroundGreenColor' bindtap='submitAction'>申请入驻</button>
+</view>

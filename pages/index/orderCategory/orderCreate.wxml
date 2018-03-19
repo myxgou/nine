@@ -1,0 +1,83 @@
+<import src='/utils/component/common.wxml' />
+
+<view>
+  <!--订单基本信息-->
+
+  <view class='backgroundWhiteColor order-create-base'>
+    <view class='order-price-board info-item'>
+      <view>{{priceTitle}}</view>
+      <view>￥{{price}}{{priceOffset}}</view>
+    </view>
+    <view class='separate-thin-line'></view>
+    <view class='order-unit-board info-item'>
+      <view>{{unitTitle}}</view>
+      <view>
+        <picker class='unit-many' mode='selector' range='{{manyUnit}}' bindchange='selectMany'>
+          <view>{{many}}{{unit}}</view>
+        </picker>
+        <image src="/images/common/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class='separate-thin-line'></view>
+    <view class='order-type-board align-item'>
+      <label class='order-type-tips'>{{orderTypeTitle}}</label>
+      <radio-group wx:if="{{isSmall}}" class="radio-group flex-row-wap price-list-board'" bindchange="radioChange">
+        <block wx:for="{{priceList}}" wx:for-item="item">
+          <view  class='radio-item'>
+            <radio value='{{item.id}}' checked="{{index == 0}}" />{{item.title}}</view>
+        </block>
+      </radio-group>
+      <label wx:else class='order-type-desc'>* 如果暂时不清楚需要多大的空间来存放,选择1即可.</label>
+    </view>
+  </view>
+
+  <view class='separate-line'></view>
+
+  <!--订单时效性信息-->
+
+  <view class='backgroundWhiteColor order-create-vaild-date'>
+    <view class='vaild-unit-board info-item'>
+      <view class='time-title-tip'>{{timeTitle}}</view>
+      <view>
+        <picker range='{{monthMany}}' bindchange='selectMonthMany'><view class='month-many'>{{month}}个月</view></picker>
+        <image src="/images/common/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class='separate-thin-line'></view>
+    <view class='date-vaild-board'>
+      <label class='date-start fontBlackColor'>起</label>
+      <picker mode='date' class='fontDisableColor'  disabled='true' start='{{fromStartDateString}}' end='{{toStartDateString}}' bindchange='selectStartDate' value='{{startDate}}'>
+        <view>{{startDate}}</view>
+      </picker>
+      <label class='date-end fontBlackColor'>止</label>
+      <picker fields='year,month' class='fontDisableColor' disabled='true' mode='date' start='{{fromEndDateString}}' end='{{toEndDateString}}' bindchange='selectEndDate' value='{{endDate}}'>
+        <view>{{endDate}}</view>
+      </picker>
+    </view>
+    <view class='separate-thin-line'></view>
+    <view class='service-rule fontBlueColor'><label>服务期限规则</label></view>
+  </view>
+
+  <view class='separate-line'></view>
+
+  <!--优惠券信息-->
+
+  <view class='backgroundWhiteColor order-create-upon'>
+    <view class='upon-board info-item'>
+      <view class='upon-title-tip'><image class='upon-image' src='/images/common/upon-icon.png'></image><label>优惠券</label></view>
+      <view>
+        <label class='upon-tips fontDisableColor'>不使用优惠券</label>
+        <image src="/images/common/arrow-right.png"></image>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class='payment-board'>
+  <label class='fontBlackColor'>{{paymentTip}}</label>
+  <view>
+    <input disabled='false' type='digit' confirm-type='done' class='pay-money-input fontGreenColor' placeholder-style='font-size: 16px;color:#09d679' placeholder='{{paymentNotice}}' />
+    <button class='pay-money-button backgroundGreenColor' bindtap='paymentAction'>{{paymentButtonTip}}</button>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/guide",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/index/orderCategory/orderCategory",
+    "pages/index/orderCategory/orderCreate",
+    "pages/index/orderCategory/paymentSucess",
+    "pages/index/order/orderSucess",
+    "pages/index/order/writePersonInfo",
+    "pages/index/order/orderTake",
+    "pages/index/order/orderService",
+    "pages/user/inviteFriend",
+    "pages/index/warehouse/warehouse",
+    "pages/index/warehouse/warehouseDetail",
+    "pages/user/storemanage/manageIndex",
+    "pages/userAuth",
+    "pages/util/cameraphoto",
+    "pages/user/storemanage/spaceDetail",
+    "pages/user/storemanage/boxDetail",
+    "pages/user/storemanage/addBox",
+    "pages/user/storemanage/goodItem",
+    "pages/index/warehouse/estimateSpace",
+    "pages/index/warehouse/contactInfo",
+    "pages/index/warehouse/commitConactInfoSucess",
+    "pages/index/warehouse/paymentOrder",
+    "pages/index/warehouse/bookOrder",
+    "pages/index/warehouse/bookHouse",
+    "pages/index/warehouse/paymentSucess",
+    "pages/user/storemanage/familyMemberList",
+    "pages/util/addItem",
+    "pages/util/selectList",
+    "pages/user/storemanage/familyMemberItem",
+    "pages/user/joinHand",
+    "pages/user/memberInfo",
+    "pages/user/joinHandSucess",
+    "pages/user/memberInfoRoute"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#26b8f2",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/index_icon.png",
+        "selectedIconPath": "images/tabbar/index_icon_selected.png",
+        "text": "存物品"
+      },
+      {
+        "pagePath": "pages/index/warehouse/estimateSpace",
+        "iconPath": "images/tabbar/estimate.png",
+        "selectedIconPath": "images/tabbar/estimate_selected.png",
+        "text": "估算空间"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/tabbar/user_icon.png",
+        "selectedIconPath": "images/tabbar/user_icon_selected.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

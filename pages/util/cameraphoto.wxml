@@ -1,0 +1,14 @@
+<view class='view-board'>
+
+  <view class='camera-board'>
+    <camera class='camera' wx:if='{{src==null}}' device-position="{{isFront?'front':'back'}}" flash="auto" binderror="error"></camera>
+  <image wx:if='{{src!=null}}' class='preview-image' src='{{src}}'></image>
+  </view>
+
+  <view class='takephoto-board'>
+    <view class='takephoto-sure-view' wx:if='{{src!=null}}' bindtap='sureAction'>确定</view>
+    <image bindtap='takephotoAction' wx:if='{{src==null}}' class='takephoto-image' src='/images/common/takePhoto.png'></image>
+    <image bindtap='changeCameraAction' wx:if='{{src==null}}' class='change-camera-position' src='/images/common/changeCamera.png'></image>
+    <view class='takephoto-reset-view' bindtap='resetAction' wx:if='{{src!=null}}' bindtap='resetAction'>重拍</view>
+  </view>
+</view>

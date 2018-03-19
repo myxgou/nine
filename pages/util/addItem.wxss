@@ -1,0 +1,55 @@
+@import "/utils/css/common.wxss";
+
+.space-board {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.space-image {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.space-input {
+  margin: 3px;
+}
+
+.space-input-board {
+  margin: 30px 20px;
+  border: 1px solid #888888;
+  border-radius: 3px;
+  height: 30px;
+}
+
+.comfirm-button {
+  margin: 30px 20px 0 20px;
+  color: white;
+}
+
+.edit-board-view {
+  width: 90%;
+  margin: 30px 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.edit-board-view>label {
+  width: 100%;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+.edit-label {
+  background-color: #09d679;
+}
+
+.del-label {
+  background-color: #e64340;
+}

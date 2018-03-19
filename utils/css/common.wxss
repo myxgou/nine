@@ -1,0 +1,114 @@
+
+
+.separate-line {
+  width: 100%;
+  height: 10px;
+  background-color: #f4f4f4;
+}
+
+.separate-thin-line {
+  width: 100%;
+  height: 1px;
+  background-color: #f4f4f4;
+}
+
+.flex-row-wap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.separator-header {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  margin: 20rpx 0rpx 20rpx 0rpx;
+}
+.separator-header-line {
+  height: 4rpx;
+  width: 150rpx;
+  background-color: #ccc;
+}
+.separator-header-title {
+  font-size: 12px;
+  text-align: center;
+  margin: 10rpx;
+  color: #9b9595;
+}
+
+.backgroundWhiteColor {
+  background-color: #fff;
+}
+
+.backgroundGrayColor {
+  background-color: #f4f4f4;
+}
+
+.fontGrayColor {
+  color: #f4f4f4;
+}
+
+.backgroundGreenColor {
+  background-color: #09d679;
+}
+
+.fontGreenColor {
+  color: #09d679;
+}
+
+.fontRedColor {
+  color: #e64340;
+}
+
+.fontBlackColor {
+  color: #353535;
+}
+
+.fontDisableColor {
+  color: #b2b2b2;
+}
+
+.fontBlueColor {
+  color: #57a8dc;
+}
+
+.submit-button {
+  color: white;
+  background-color: #09d679;
+  border-radius: 5px;
+}
+
+page {
+  color: #353535;
+  font-size: 16px;
+}
+
+.fontNormalSize {
+  font-size: 16px;
+}
+
+.fontBiggerSize {
+  font-size: 20px;
+}
+
+.fontSmallSize {
+  font-size: 11px;
+}
+
+.fontMicroSize {
+  font-size: 9pt;
+}
+
+.yaheifont{
+  font-family: "Helvetica"
+}
+
+page {
+  background-color: #ffffff;
+  font-family: "Helvetica";
+}
+
+.normal-font-size {
+  font-size: 12px;
+}

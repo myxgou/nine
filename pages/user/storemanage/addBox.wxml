@@ -1,0 +1,9 @@
+<!--pages/user/storemanage/addSpace.wxml-->
+<view class='space-board'>
+
+  <image class='space-image' bindtap='takePhotoAction' src='{{image}}'></image>
+  <view class='space-input-board'>
+  <input class='space-input' bindinput='resetNameAction' placeholder='请输入名称' confirm-type='done'></input>
+  </view>
+</view>
+<button class='comfirm-button backgroundGreenColor' bindtap='confirmAddBoxAction'>添加</button>

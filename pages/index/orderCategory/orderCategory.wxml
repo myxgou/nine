@@ -1,0 +1,29 @@
+<import src="/utils/component/common.wxml" />
+<view class='backgroundWhiteColor'>
+  <label class='category-tips yaheifont'>存放物品分类</label>
+  <view class='type-estimation-board' bindtap='orderSmallAction'>
+    <label>A.全小件物品</label>
+    <label>估价 ></label>
+  </view>
+  <view class='describe-board'>
+    <ui class='describe-content'>
+      <li class='describe-item'>* 上门去送</li>
+      <li class='describe-item'>* 全为可装箱物品,箱子型号120L</li>
+      <li class='describe-item'>(如:换季衣服、玩具、书籍、棉被、电扇小电器等)</li>
+    </ui>
+  </view>
+  <view class="separate-line"></view>
+  <view>
+  <view class='type-estimation-board' bindtap='orderBigAction'>
+    <label>B.全大件物品</label>
+    <label>估价 ></label>
+  </view>
+  <view class='describe-board'>
+    <ui class='describe-content'>
+      <li class='describe-item'>* 可委托搬运</li>
+      <li class='describe-item'>* 适用于搬家、装修、存放临时不用的家具</li>
+      <li class='describe-item'>(如:床、座椅、电器等)</li>
+    </ui>
+  </view>
+  </view>
+</view>

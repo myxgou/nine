@@ -1,0 +1,5 @@
+<template name="fullReview">
+  <view class='full-board-view' bindtap='reviewTapAction'>
+    <image src='{{reviewImageURL}}' mode='aspectFit'></image>
+  </view>
+</template>

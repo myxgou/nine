@@ -1,0 +1,16 @@
+<template name="separator-header">
+  <view class="separator-header">
+    <view class="separator-header-line"></view>
+    <view class="separator-header-title">{{title}}</view>
+    <view class="separator-header-line"></view>
+  </view>
+</template>
+
+
+<template name="box-item">
+  <view class="separator-header">
+    <view class="separator-header-line"></view>
+    <view class="separator-header-title">{{title}}</view>
+    <view class="separator-header-line"></view>
+  </view>
+</template>

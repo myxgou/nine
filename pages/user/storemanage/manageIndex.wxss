@@ -1,0 +1,115 @@
+/* pages/user/storemanage/manageIndex.wxss */
+@import "/utils/css/common.wxss";
+
+.view-board {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header-board-view {
+  width: 90%;
+  margin-left: 5%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border-bottom: 1px solid #b2b2b2;
+  align-items: center;
+  flex: none;
+}
+
+.seperator-label{
+  width: 1px;
+  margin: 0 10px;
+}
+
+.selected {
+  color: #e64340;
+  width: 40px;
+  text-align: center;
+  border-bottom: 1px solid #e64340;
+}
+
+.deselected {
+  width: 40px;
+  text-align: center;
+  color: #b2b2b2;
+}
+
+.item-group-view {
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+
+.space-list {
+  flex: 1;
+  width: 100%;
+  white-space:nowrap;
+}
+
+.space-add {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+
+.space-add-board {
+  text-align: center;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.space-item {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space-item image {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius:50%;
+  border:1px solid #b2b2b2;
+}
+
+.space-item label {
+  text-align: center;
+}
+
+page {
+  height: 100%;
+}
+
+.people-manage-view {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  top: 50%;
+  border-radius: 15px;
+  border: 1px solid #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.people-manage-view>image {
+  width: 20px;
+  height: 20px;
+}
+
+.hide {
+  visibility:hidden
+}

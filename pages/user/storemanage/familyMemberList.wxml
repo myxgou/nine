@@ -1,0 +1,11 @@
+<view>
+  <block wx:for-items='{{memberList}}' wx:for-item='item'>
+    <view data-id='{{item.id}}' data-index='{{index}}' class='member-item-board-view' bindtap='selectedAction'>
+      <image src='{{item.icon}}'></image>
+      <label>{{item.name}}</label>
+    </view>
+  </block>
+</view>
+<view wx:if='{{isAdd}}' class='member-add-board'>
+  <image bindtap='addMemberAction' class='member-add' src='/images/manage/add.png'></image>
+</view>

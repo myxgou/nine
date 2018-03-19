@@ -1,0 +1,7 @@
+<view class='input-board-view'> 
+  <view><label>姓名:</label><input placeholder='请输入姓名' bindinput='bindName'></input></view>
+  <view><label>电话:</label><input type='number' placeholder='请输入联系电话' bindinput='bindTel'></input></view>
+  <view><label>地址:</label><input placeholder='请输入详细地址' bindinput='bindAddress' value='{{address}}'></input></view>
+</view>
+
+<button class='submit-button' bindtap='commitAction'>提交</button>

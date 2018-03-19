@@ -1,0 +1,29 @@
+<template name="warehouse">
+  <view class='warehouse-list-item'>
+    <view class='box-item-base'>
+      <image src="{{listPicUrl}}" class='box-item-cover' mode='aspectFit'></image>
+      <view class='box-item-header'>
+        <view class='box-item-text'>
+          <label>{{pointName}}</label>
+          <label>{{price}}</label>
+        </view>
+        <label class='header-thin-label'>容积:{{spaceUnit}}</label>
+        <label class='header-text-label'>方式:{{pointService}}</label>
+        <view wx:if='{{address.length > 0}}' class='address-info-board-view'>
+          <view>
+            <image class='address-image' src='../../../images/common/address.png'></image>
+            <label class='address-label'>{{address}}</label>
+          </view>
+          <label class='address-label'>{{distance}}</label>
+        </view>
+      </view>
+      <image wx:if='{{isArrowRight == 1}}' src='/images/common/arrow-right.png' class='arrow-right'></image>
+      </view>
+      <view wx:if='{{storageCompanyName.length > 0}}' class='arrow-up-view'></view>
+      <view wx:if='{{storageCompanyName.length > 0}}' class='company-board-view'>
+        <image src='/images/common/light_point.png'></image>
+        <label>{{storageCompanyName}}</label>
+    </view>
+  </view>
+
+</template>

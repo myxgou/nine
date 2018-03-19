@@ -1,0 +1,5 @@
+<view class='sucess-board-view'>
+  <image class='success-image' src='/images/joinhand/joinhand-success.png'></image>
+  <label class='success-tips'>加入成功</label>
+  <button class='comfirm-button backgroundGreenColor' bindtap='sureAction'>关闭</button>
+</view>

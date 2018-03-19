@@ -1,0 +1,10 @@
+<import src="/utils/component/warehouse.wxml" />
+<view class='scroll-view fontNormalSize' style="height: {{pageHeight}}px;">
+  <block wx:for-items="{{boxList}}" wx:for-item="item">
+    <view class='box-item' bindtap='intoDetail' data-index='{{index}}'>
+      <template is="warehouse" data="{{...item}}"></template>
+    </view>
+    <view class='separate-thin-line'></view>
+  </block>
+</view>
+ <button wx:if='{{!isJoined}}' class='submit-button join-button' bindtap='joinHand'>加入我们</button>

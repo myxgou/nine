@@ -1,0 +1,24 @@
+<view class='user-info-board'>
+  <image class='share-image' src='/images/common/share.png'></image>
+  <label class='user-name'>{{name}}</label>
+  <canvas canvas-id="mycanvas" class="qrcode" />
+  <label class='qrcode-tips'>扫一扫上面的二维码</label>
+</view>
+<view class='total-board'>
+  <view class='info-tips-board'>
+    <view class='info-sepeator-view'></view>
+    <label class='info-tips'>信息记录</label>
+  </view>
+  <view class='status-list-board'>
+    <block wx:for-items='{{statusList}}' wx:for-item='item'>
+      <view class='item-board'>
+        <label class='item-value'>{{item.value}}</label>
+        <label class='item-key'>{{item.key}}</label>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class='user-avatar-board'>
+<image class='user-avatar' src='{{avatar}}'></image>
+</view>

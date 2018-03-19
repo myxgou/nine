@@ -1,0 +1,22 @@
+<!--pages/user/user.wxml-->
+<import src="/utils/component/common.wxml" />
+<view class='user-header'>
+  <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+  <view class="userinfo-describe">
+    <view class='userinfo-name'>{{userInfo.nickName}}</view>
+    <view class='userinfo-authentication-{{userInfo.certification?"yes":"no"}}'>{{userInfo.certification?'已认证':'未认证'}}</view>
+    <view class='userinfo-service-date'>服务到期日期:{{userInfo.serviceDate}}</view>
+  </view>
+</view>
+<view class="separate-line"></view>
+<view class="user-menu-list">
+  <block wx:for-items="{{list}}" wx:for-item="item" wx:key="*item">
+    <navigator url="{{item.page}}" class="user-menu-list-navigator">
+      <view class='user-menu-list-navigator-view'>
+        <image src="{{item.icon}}" class="user-menu-list-navigator-icon"></image>
+        <view class="user-menu-list-navigator-view-text">{{item.name}}</view>
+      </view>
+      <image src="/images/common/arrow-right.png" class="user-menu-list-navigator-arrow"></image>
+    </navigator>
+  </block>
+</view>

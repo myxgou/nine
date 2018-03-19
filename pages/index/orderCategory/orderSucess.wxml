@@ -1,0 +1,8 @@
+<view class='pay-sucess-board'>
+<image src='/images/common/paySucess.png' class='pay-sucess-image'></image>
+<label class='pay-sucess-tips'>{{paymentTips}}</label>
+<label>{{orderDateTime}}</label>
+<label>请保持电话通畅，工作人员会尽快与您联络！</label>
+</view>
+
+<button class='submit-button action-button'>取消</button>

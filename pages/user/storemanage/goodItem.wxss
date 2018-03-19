@@ -1,0 +1,154 @@
+/* pages/user/storemanage/addItem.wxss */
+@import "/utils/css/common.wxss";
+@import "/utils/css/fullReview.wxss";
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.add-item-board-view {
+  margin: 10px 10px 45px 10px;
+}
+
+.item-name-input {
+  padding: 5px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #b2b2b2;
+}
+
+.import-board-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.start-item-image {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+}
+
+.desc-board-view {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc-board-view>textarea {
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  height: 50px;
+  padding: 5px;
+}
+
+.desc-board-view>image {
+  width: 50px;
+  height: 50px;
+}
+
+.photos-list-view {
+  height: 110px;
+}
+
+.preview-list-scrollview {
+  height: 60px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.list-item-image {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.add-camera-board {
+  text-align: right;
+}
+
+.item-attr-board>view {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  justify-content: center;
+  align-items:center;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.item-attr-board>view input {
+  flex: 1;
+  padding: 5px;
+}
+
+.item-attr-tips-label {
+  display: block;
+  height: 25px;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.item-attr-board>view label {
+  width: 80px;
+  flex: none;
+}
+
+.arrow-right-image {
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
+.position-button {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.edit-board-view {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.edit-board-view>label {
+  width: 50%;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+.edit-label {
+  background-color: #09d679;
+}
+
+.del-label {
+  background-color: #e64340;
+}
+
+.camera-image {
+  width: 30px;
+  height: 30px;
+}
+
+.picker {
+  flex: 1;
+  height: 100%;
+}
+
+.picker-sub-view {
+  height: 30px;
+}

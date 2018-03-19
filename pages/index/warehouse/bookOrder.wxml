@@ -1,0 +1,36 @@
+<view class='book-board-view'>
+  <view class='choose-board-view'>
+    <label>放入时间:</label>
+    <view>
+       <picker  mode="date" start="{{fromDate}}" end="{{toDate}}" bindchange="chooseDateAction">
+      <view class='picker-sub-view'>{{inputDate}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class='choose-board-view'>
+    <label>放入时长:</label>
+    <view>
+      <picker  range='{{longRange}}' mode="multiSelector"  bindchange="chooseLongAction" value='[0,1,0]'>
+      <view class='picker-sub-view'>{{inputLong}}</view>
+      </picker>
+      
+    </view>
+  </view>
+  <view class='choose-board-view'>
+    <label>服务选择:</label>
+    <view class='radio-board-view'>
+      <radio-group bindchange="serviceChange">
+        <radio value="1" checked="true" />自助
+        <radio value="2" />上门
+      </radio-group>
+    </view>
+  </view>
+  <view class='describe-board-view'>
+    <textarea placeholder='简单描述存储物品' bindinput='bindDescAction'></textarea>
+  </view>
+</view>
+
+<view class='next-board-view'>
+  <label class='fontRedColor normal-font-size'>预定有优惠</label>
+  <button class='submit-button' bindtap='nexAction'>下一步</button>
+</view>

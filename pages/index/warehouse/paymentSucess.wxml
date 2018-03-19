@@ -1,0 +1,7 @@
+<view class='pay-sucess-board'>
+<image src='/images/common/paySucess.png' class='pay-sucess-image'></image>
+<label class='pay-sucess-tips'>支付成功</label>
+
+</view>
+
+<button class='submit-button action-button' bindtap='finshedAction'>完成</button>

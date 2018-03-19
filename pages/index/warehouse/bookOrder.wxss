@@ -1,0 +1,66 @@
+@import "/utils/css/common.wxss";
+
+.book-board-view {
+  margin: 10px;
+}
+
+.choose-board-view {
+  display: flex;
+  height: 30px;
+  margin: 5px 0;
+  
+}
+
+.choose-board-view>label {
+  width: 80px;
+  flex: none;
+}
+
+.choose-board-view>view {
+  flex: 1;
+  display: flex;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.describe-board-view>textarea {
+  margin-top:15px; 
+  height: 80px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  padding: 5px;
+  width: auto;
+}
+
+.next-board-view {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.next-board-view>label {
+  height: 20px;
+  margin-left: 5px;
+  line-height: 20px;
+}
+
+.next-board-view>button {
+  width: 100%;
+  border: none;
+  border-radius:0;
+}
+
+.next-board-view>button::after {
+  content: ""
+}
+
+.picker-sub-view {
+  line-height: 25px;
+}
+
+.radio-board-view {
+  border: none !important;
+}

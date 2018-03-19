@@ -1,0 +1,41 @@
+<view class='user-baseinfo-board'>
+  <view>
+    <label>真实姓名</label>
+    <input confirm-type='done' placeholder='请输入与证件相符的姓名' />
+  </view>
+  <view class='separate-thin-line'></view>
+  <view>
+    <label>联系电话</label>
+    <input type='number' confirm-type='done' placeholder='请输入联系电话' />
+  </view>
+  <view class='separate-thin-line'></view>
+  <view>
+    <label>验证码</label>
+    <input id='verifyCode' confirm-type='done' placeholder='请输入验证码' />
+    <button bindtap='sendVerifyCode' id='sendVerifyCode' class='send-verify-code fontGreenColor'>获取验证码</button>
+  </view>
+  <view class='separate-thin-line'></view>
+  <view>
+    <label>详细地址</label>
+    <input confirm-type='done' placeholder='请输入地址' />
+  </view>
+  <view class='separate-thin-line'></view>
+  <view>
+    <label>备注</label>
+    <input confirm-type='done' placeholder='请输入备注信息' />
+  </view>
+  <view class='separate-line'></view>
+  <view>
+    <label>电梯</label>
+    <radio-group class='fontDisableColor' bindchange='radioChange'>
+      <view>
+        <radio value='1' checked='checked' />有</view>
+      <view>
+        <radio value='0' />无</view>
+    </radio-group>
+
+  </view>
+
+</view>
+<label class='user-baseinfo-board-tip fontRedColor' id='baseinfoTip'>*请填写详细信息</label>
+<button class='submit-button submit-button-position' bindtap='commitPersonInfoAction'>提交</button>

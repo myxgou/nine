@@ -1,0 +1,16 @@
+@import "/utils/css/common.wxss";
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.view-board {
+  width: 100%;
+  height: 100%;
+}
+
+.guide-image {
+  width: 100%;
+  height: 100%;
+}

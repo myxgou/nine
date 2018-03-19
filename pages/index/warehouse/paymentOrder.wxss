@@ -1,0 +1,45 @@
+@import "/utils/css/common.wxss";
+
+.payment-board-view {
+  margin: 10px;
+}
+
+.input-price-board-view {
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.input-price-board-view view:last-child {
+  border: none;
+}
+
+.input-board-view {
+  display: flex;
+  margin: 10px 5px;
+  border-bottom: 1px solid #b2b2b2;
+  height: 28px;
+}
+
+.input-board-view>label {
+    width: 130px;
+}
+
+.upon-board-view {
+  margin: 15px 0;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px; 
+}
+
+.upon-board-view view:last-child {
+  border: none;
+}
+
+.upon-board-view>label {
+  width: 100px;
+}
+
+.button-position {
+  width: 90%;
+  margin: 30px 5%;
+}

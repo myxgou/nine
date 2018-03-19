@@ -1,0 +1,155 @@
+@import "/utils/css/common.wxss";
+
+page {
+  background-color: #f4f4f4;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-create-base {
+  padding: 5px 10px 0px 10px;
+}
+
+.order-create-base>view {
+  margin: 8px 0;
+}
+
+.info-item {
+  margin-bottom: 5px;
+  display:flex;
+  height: 30px;
+  align-items: flex-end;
+  justify-content:space-between;
+}
+
+.info-item view:last-child {
+  display:flex;
+  align-items:flex-end;
+}
+
+.order-unit-board view:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+
+.order-unit-board view:last-child image,.vaild-unit-board view:last-child image,.upon-board view:last-child image {
+  width: 20px;
+  height: 20px;
+}
+
+.order-type-desc {
+  font-size: 12px;
+}
+
+.price-list-board {
+  font-size: 14px;
+}
+
+.align-item {
+  display:flex;
+  flex-direction:column;
+  margin: 5px 0px 5px 0px;
+}
+
+.order-type-tips {
+  margin-bottom: 10px;
+}
+
+.radio-group>view {
+  margin: 10px 30px 10px 0
+}
+
+.radio-group>view:last-child {
+  margin-right: 0;
+}
+
+.date-vaild-board {
+  display:flex;
+  justify-content:space-between;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.date-vaild-board picker {
+  width: 100px;
+}
+
+.order-create-vaild-date {
+  padding:0px 10px;
+}
+
+.order-create-upon {
+  padding: 8px 10px;
+}
+
+.upon-tips {
+  font-size: 14px;
+}
+
+.payment-board {
+  height: 70px;
+}
+
+.payment-board label {
+  height: 24px;
+  font-size: 12px;
+  margin: 5px;
+  color: #b2b2b2
+}
+
+.payment-board view {
+  height: 46px;
+  background-color: #fff;
+}
+
+.pay-money-input {
+  height: 100%;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.pay-money-button {
+  height: 100%;
+  width: 40%;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  margin-right: 0;
+}
+
+.service-rule {
+  font-size: 12px;
+  text-align: right;
+  text-decoration: underline;
+  padding:5px 0px;
+}
+
+.payment-board view{
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-price-board view:last-child {
+  margin-right: 18px;
+}
+
+.vaild-unit-board {
+  margin: 10px 0;
+}
+
+page {
+  color: #353535;
+}
+
+.upon-image {
+  width: 25px;
+  height: 25px;
+}
+
+.upon-title-tip {
+  display: flex;
+  align-content: center;
+  height: 22px;
+}

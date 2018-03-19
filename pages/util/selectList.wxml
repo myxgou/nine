@@ -1,0 +1,16 @@
+
+  <scroll-view scroll-y class='scroll-list-view'>
+    <block wx:for-items='{{dataList}}' wx:for-item='item'>
+      <view class='item-view' bindtap='selectItemAction' data-index='{{index}}'>
+        <view wx:if='{{item.icon.length > 0}}' class='image-view'>
+          <image src='{{item.icon}}'></image>
+        </view>
+        <view class='info-view'>
+          <label class='item-title'>{{item.title}}</label>
+          <label class='item-sub-title' wx:if='{{item.subTitle.length > 0}}'>{{item.subTitle}}</label>
+        </view>
+        <image class='arrow-image' src='{{selectedIndex == index?"/images/common/checkedbox.png":""}}'></image>
+      </view>
+    </block>
+  </scroll-view>
+  <button class='submit-button position-button' bindtap='submitAction'>提交</button>

@@ -1,0 +1,18 @@
+<view class='header-board-view'>
+  <view class='detail-icon-board'><image class='space-icon' src='{{iconUrl}}'></image></view>
+  <view class='detail-info-board'>
+
+  </view>
+</view>
+<view class='space-item-board-view'>
+  <block wx:for-items="{{spaceItem}}" wx:for-item="item">
+    <view class='space-item-view'>
+      <image class='space-item-image' src='{{item.cover}}'></image>
+      <label class='space-item-title'>{{item.title}}</label>
+    </view>
+  </block>
+</view>
+
+<view class='add-item-board'>
+  <image bindtap='addSpaceDetailAction' class='space-item-add' src='/images/manage/add.png'></image>
+</view>

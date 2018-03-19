@@ -1,0 +1,44 @@
+<view class='view-board'>
+  <view class='header-board-view'>
+    <label bindtap='chooseItemsAction' class='{{isItems?"selected":"deselected"}}'>物品</label>
+    <label class='seperator-label'>|</label>
+    <label bindtap='chooseSpaceAction' class='{{!isItems?"selected":"deselected"}}'>空间</label>
+  </view>
+  <scroll-view wx:if='{{!isItems}}' scroll-y class='space-list' scroll-into-view='{{scrollToView}}'>
+    <block wx:for-items="{{spaceList}}" wx:for-item="item">
+      <view wx:if='{{index % 2 == 0}}' class='item-group-view' id='group{{index}}'>
+        <view bindtap='intoSpaceDetailAcion' data-index='{{[index]}}' class='space-item' wx:if='{{item.icon.length>0}}'>
+          <image src='{{item.icon}}' mode='aspectFit'></image>
+          <label>{{item.name}}</label>
+        </view>
+        <view bindtap='intoSpaceDetailAcion' data-index='{{index + 1}}' class='space-item {{index + 1 >= spaceList.length ? "hide" : ""}}'>
+          <image wx:if='{{index + 1 < spaceList.length}}' src='{{spaceList[index+1].icon}}' mode='aspectFit'></image>
+          <label wx:if='{{index + 1 < spaceList.length}}'>{{spaceList[index+1].name}}</label>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <scroll-view wx:if='{{isItems}}' scroll-y class='space-list' scroll-into-view='{{scrollToView}}'>
+    <block wx:for-items="{{goodItemsList}}" wx:for-item="item">
+      <view wx:if='{{index % 2 == 0}}' class='item-group-view' id='group{{index}}'>
+        <view bindtap='intoItemDetailAcion' data-index='{{[index]}}' class='space-item'>
+          <image src='{{item.coversPic}}' mode='aspectFit'></image>
+          <label>{{item.name}}</label>
+        </view>
+        <view bindtap='intoItemDetailAcion' data-index='{{[index+1]}}' class='space-item {{index + 1 >= goodItemsList.length ? "hide" : ""}}'>
+          <image wx:if='{{index + 1 < goodItemsList.length}}' src='{{goodItemsList[index+1].coversPic}}' mode='aspectFit'></image>
+          <label wx:if='{{index + 1 < goodItemsList.length}}'>{{goodItemsList[index+1].name}}</label>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>
+<view class='space-add-board'>
+  <image class='space-add' bindtap='addSpaceAction' src='/images/manage/add.png'></image>
+</view>
+
+<view class='people-manage-view' bindtap='intoFamilyMemberList'>
+  <image src='/images/common/people.png'></image>
+</view>

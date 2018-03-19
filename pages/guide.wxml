@@ -1,0 +1,3 @@
+<view class='view-board'>
+  <image class='guide-image' src='/images/guide/guide_board.jpg' bindtap='mainIntoAction' mode='aspectFit'></image>
+</view>

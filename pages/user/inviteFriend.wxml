@@ -1,0 +1,19 @@
+<view class='invite-board'>
+  <view class='invite-qr-board'>
+    <image src='/images/invite/inviteTopBar.png'></image>
+    <image src='{{qrImageUrl}}'></image>
+  </view>
+  <view class='invite-separate-board backgroundGrayColor'>
+    <image src='/images/invite/inviteSeparator.png'></image>
+  </view>
+  <view class='invite-info-board'>
+    <label class='invite-qr-tips'>您的邀请码</label>
+    <view class='qr-code-board fontDisableColor fontSmallSize'>
+      <view>{{qrCode}}</view>
+      <view bindtap='copyThat'>点我复制</view>
+    </view>
+    <label class='fontMicroSize invite-rule-tips'>邀请好友关注，多种福利送不停，详见“活动细则”.</label>
+    <button class='submit-button invite-button'>立即邀请</button>
+    <label class='fontBlueColor fontSmallSize'>查看邀请记录</label>
+  </view>
+</view>

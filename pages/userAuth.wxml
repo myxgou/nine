@@ -1,0 +1,4 @@
+
+<button class='backgroundGreenColor auth-button' bindtap='authAction'>允许授权</button>
+
+<label>为了更好的为您服务，请授权。</label>

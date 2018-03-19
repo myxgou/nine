@@ -1,0 +1,81 @@
+/* pages/user/invist.wxss */
+
+@import "/utils/css/common.wxss";
+
+page{
+  background:linear-gradient(#2c97fc, #7667f5);
+}
+
+.invite-board {
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between; 
+}
+
+.invite-qr-board {
+  width: 100%;
+  height: 45%;
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+
+.invite-qr-board image:first-child{
+  width: 100%;
+  height: 10px;
+}
+
+.invite-qr-board image:last-child{
+  width: 150px;
+  height: 150px;
+}
+
+.invite-separate-board {
+  width: 100%;
+  height: 5%;
+  justify-content: space-between
+}
+
+.invite-separate-board image {
+  width: 100%;
+  height: 100%
+}
+
+.invite-info-board {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code-board {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+  width: 90%;
+  height: 50px;
+  align-items: center;
+  padding:0 10px;
+}
+
+.invite-qr-tips {
+  margin: 10px;
+}
+
+.invite-button {
+  width: 80%;
+  margin:20px 10%;
+}
+
+.invite-rule-tips {
+  margin: 5px;
+}

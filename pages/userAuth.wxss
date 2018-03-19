@@ -1,0 +1,20 @@
+/* pages/userAuth.wxss */
+@import "/utils/css/common.wxss";
+.auth-button {
+  height: 40px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 50px;
+  color: white
+}
+
+label {
+  font-size: 12px;
+  color: #e64340;
+  position: absolute;
+  right: 10%;
+  top: 110px;
+  width: 80%;
+  text-align: right;
+}

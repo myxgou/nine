@@ -1,0 +1,13 @@
+@import "/utils/css/common.wxss";
+@import "/utils/css/warehouse.wxss";
+.scroll-view {
+  margin:0px 10px;
+}
+
+.join-button {
+  height: 46px;
+  width: 80%;
+  margin: 10px 10%;
+  position: fixed;
+  bottom: 0px;
+}

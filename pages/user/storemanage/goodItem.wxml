@@ -1,0 +1,79 @@
+<import src="/utils/component/fullReview.wxml" />
+<view class='add-item-board-view'>
+  <view>
+    <input class='item-name-input' placeholder='物品名称' bindinput='bindName' value='{{name}}'></input>
+  </view>
+  <view class='import-board-view'>
+    <view>
+      <label>重要度</label>
+    </view>
+    <view>
+      <block wx:for-items='{{starts}}' wx:for-item='item'>
+        <image data-index='{{index+1}}' src='{{item}}' data-src='{{item}}' bindtap='tapStartImageAction' class='start-item-image'></image>
+      </block>
+    </view>
+  </view>
+  <view class='desc-board-view'>
+    <textarea bindinput='bindDesc' placeholder='物品描述' value='{{declares}}'></textarea>
+    <image src='{{qrCodeUrl}}'></image>
+  </view>
+  <view class='photos-list-view'>
+    <label class='photo-tips-label'>添加物品照片(最多{{allowImagesCount}}张)</label>
+    <view>
+      <scroll-view scroll-x class='preview-list-scrollview' scroll-into-view='item{{photoList.length - 1}}'>
+        <block wx:for-items="{{photoList}}" wx:for-item="item">
+          <image bindtap='reviewAction' bindlongtap='deleteAction' class='list-item-image' src='{{item}}' id='item{{index}}' mode='aspectFit' data-index='{{index}}' data-src='{{item}}'></image>
+        </block>
+      </scroll-view>
+    </view>
+    <view class='add-camera-board'>
+      <image bindtap='addImageAction' class='camera-image' src='/images/common/camera-add.png'></image>
+    </view>
+  </view>
+  <view class='item-attr-board'>
+    <label class='item-attr-tips-label fontRedColor'>其他属性</label>
+
+    <view>
+      <label>所属人员:</label>
+      <input value='{{belongName}}' disabled='false' bindtap='bindBelongAction'></input>
+      <image src='/images/common/arrow-right.png' class='arrow-right-image'></image>
+    </view>
+    <view>
+      <label>物品类型:</label>
+      <picker class='picker' range='{{stuffTypeArray}}' bindchange="bindStuffAction">
+        <view class='picker-sub-view'>{{stuffType}}</view>
+      </picker>
+      <image src='/images/common/arrow-right.png' class='arrow-right-image'></image>
+    </view>
+    <view>
+      <label>购买价格:</label>
+      <input type='digit' bindinput='bindPriceAction' value='{{buyPrice}}'></input>
+      <image src='/images/common/arrow-right.png' class='arrow-right-image'></image>
+    </view>
+    <view>
+      <label>物品颜色:</label>
+      <input bindinput='bindColorAction' value='{{color}}'></input>
+      <image src='/images/common/arrow-right.png' class='arrow-right-image'></image>
+    </view>
+    <view>
+      <label>购买时间:</label>
+      <picker class='picker' mode="date" end="{{fromDate}}" bindchange="chooseDateAction">
+        <view class='picker-sub-view'>{{inputDate}}</view>
+      </picker>
+      <image src='/images/common/arrow-right.png' class='arrow-right-image'></image>
+    </view>
+    <view>
+      <label>购买渠道:</label>
+      <picker class='picker' range="{{channelsArray}}" bindchange="bindChannelAction">
+        <view class='picker-sub-view'>{{channel}}</view>
+      </picker>
+      <image src='/images/common/arrow-right.png' class='arrow-right-image'></image>
+    </view>
+  </view>
+</view>
+<button wx:if='{{isAdd}}' class='submit-button position-button' bindtap='submitAction'>添加</button>
+<view wx:if='{{!isAdd}}' class='edit-board-view'>
+  <label bindtap='onEditAction' class='edit-label'>编辑</label>
+  <label bindtap='onDeleteAction' class='del-label'>删除</label>
+</view>
+<template wx:if='{{isShowReview}}' is="fullReview" data="{{...reviewImage}}"></template>
