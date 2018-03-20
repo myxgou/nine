@@ -16,10 +16,17 @@ Page({
     
     list: [
       {
+        id: 'joinhand',
+        name: '加盟',
+        icon:'/images/common/joinHand.png',
+        page: '/pages/user/memberInfoRoute'
+      },
+      
+      {
         id: 'order',
         name: '我的订单',
         icon:'/images/common/order.png',
-        page: '/pages/user/memberInfoRoute'
+        page: '/pages/user/order'
       }, {
         id: 'coupon',
         name: '优惠券',

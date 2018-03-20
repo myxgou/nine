@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   sureAction: function() {
-    
+      wx.switchTab({
+        url: '../index/index',
+      })
   },
   data: {
   

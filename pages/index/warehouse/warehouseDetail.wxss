@@ -9,7 +9,7 @@ page {
 .header-info-board {
   height: 30px;
   display: flex;
-  background-color: #FFF5CE;
+  background-color: #fff5ce;
   align-items: center;
 }
 
@@ -25,7 +25,7 @@ page {
   height: 10px;
   line-height: 10px;
   font-size: 10px;
-  color: #FF762E;
+  color: #ff762e;
   margin-left: 5px;
 }
 
@@ -34,7 +34,7 @@ page {
   justify-content: space-between;
   margin: 0 10px;
   height: 33px;
-  align-items:center;
+  align-items: center;
 }
 
 .device-list-item {
@@ -67,7 +67,7 @@ page {
   margin-left: 10px;
   margin-top: 10px;
   display: block;
-  color: #FC5939;
+  color: #fc5939;
 }
 
 .store-header-example-board {
@@ -83,14 +83,15 @@ page {
   margin-left: 10px;
 }
 
-.store-tips-label{
+.store-tips-label {
   font-size: 12px;
   flex: 1;
   margin-left: 5px;
-  color: #333333;
+  color: #333;
 }
+
 .estimate-button {
-  margin:10px 10px; 
+  margin: 10px 10px;
 }
 
 .warhouse-info-board {
@@ -115,7 +116,7 @@ page {
   font-size: 12px;
   height: 20px;
   line-height: 20px;
-  margin-left: 10px; 
+  margin-left: 10px;
   display: block;
 }
 
@@ -138,7 +139,7 @@ page {
   border-top: 1px solid #b2b2b2;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .pay-tab-board label {
@@ -156,5 +157,74 @@ page {
   width: 50px;
   height: 50px;
   margin: 5px;
-  display:inline-block;
+  display: inline-block;
+}
+
+.box-list-board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+.box-list-board label {
+  font-size: 12px;
+  width: 61px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  display: block;
+}
+
+.box-selected {
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ffa474;
+}
+
+.box-normal {
+  color: #333;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.selected-box-board {
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+  margin: 0 30px;
+}
+
+.box-image {
+  width: 50%;
+  height: 160px;
+  flex: none;
+}
+
+.box-info-board {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  flex: 1;
+}
+
+.box-info-board textarea {
+  color: #666;
+  font-size: 12px;
+  flex: 1;
+  width: 100%;
+}
+
+.box-info-board label {
+  width: 125px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: #56bd48;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin: 5px 0;
+  flex: none;
 }

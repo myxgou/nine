@@ -25,6 +25,14 @@ Page({
     })
   },
 
+  storeAction: function(){
+    getApp().setUtmContent(getApp().userInfo.getUserId());
+    getApp().setUtmCampaign('btn');
+    wx.switchTab({
+      url: '../index/index',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

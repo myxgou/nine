@@ -32,9 +32,17 @@ Page({
       data: {},
       success: function (res) {
         wx.hideLoading();
+        if (res.ispartner == 20) {
         wx.reLaunch({
           url: './memberInfo?fangkeshu=' + res.fangkeshu + '&chengjiaoshu=' + res.chengjiaoshu + "&chengjiaojine=" + res.chengjiaojine,
         })
+
+        }
+        else {
+          wx.reLaunch({
+            url: './joinHand',
+          })
+        }
       },
       fail: function () {
         wx.showModal({

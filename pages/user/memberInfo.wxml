@@ -1,5 +1,5 @@
 <view class='user-info-board'>
-  <image class='share-image' src='/images/common/share.png'></image>
+  <!-- <image class='share-image' src='/images/common/share.png'></image> -->
   <label class='user-name'>{{name}}</label>
   <canvas canvas-id="mycanvas" class="qrcode" />
   <label class='qrcode-tips'>扫一扫上面的二维码</label>
@@ -22,3 +22,5 @@
 <view class='user-avatar-board'>
 <image class='user-avatar' src='{{avatar}}'></image>
 </view>
+
+<button bindtap='storeAction' class='submit-button backgroundGreenColor'>立即存物品</button>

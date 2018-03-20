@@ -3,6 +3,17 @@ common = require('../../../utils/js/Common.js'),
 requestManage = require('../../../utils/js/request/WareHouseRequest.js');
 Page({
 
+  selectIndex: function(index) {
+    this.setData({
+      selectedIndex: index,
+      boxImageSrc: this.data.boxLists[index].src,
+      boxDescContent: this.data.boxLists[index].desc
+    })
+
+  },
+  selectedAction: function(e) {
+    this.selectIndex(e.currentTarget.dataset.index)
+  },
   reviewTapAction: function () {
     this.setData({
       isShowReview: false
@@ -65,11 +76,17 @@ Page({
   onLoad: function (options) {
     let self = this,identifier = options.id;
     this.setData({
-      isShowReview: false
+      selectedIndex: 0,
+      isShowReview: false,
+      boxLists: [{ title: '迷你仓', desc: '可容纳三门衣柜*2+大号储物箱*4+24寸行李箱*2+4屉桌*1+收藏品+大号床*1+其它小家电', src: '/images/box/mini.jpg' }, 
+        { title: '中仓', desc: '1可容纳三门衣柜*2+大号储物箱*4+24寸行李箱*2+4屉桌*1+收藏品+大号床*1+其它小家电', src: '/images/box/middle.jpg'  }, 
+        { title: '大仓', desc: '2可容纳三门衣柜*2+大号储物箱*4+24寸行李箱*2+4屉桌*1+收藏品+大号床*1+其它小家电', src: '/images/box/big.jpg'  }, 
+        { title: '特大仓', desc: '可容纳三门衣柜*2+大号储物箱*4+24寸行李箱*2+4屉桌*1+收藏品+大号床*1+其它小家电可容纳三门衣柜*2+大号储物箱*4+24寸行李箱*2+4屉桌*1+收藏品+大号床*1+其它小家电', src: '/images/box/bigger.jpg'  }]
     })
     wx.showLoading({
       title: '加载中...',
     });
+    this.selectIndex(0)
     requestManage.detail({
       data:{
         storagepointid: identifier
