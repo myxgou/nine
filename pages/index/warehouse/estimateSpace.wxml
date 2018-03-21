@@ -21,7 +21,7 @@
 </view>
 <view class='store-aim-board'>
   <block wx:for-items="{{storeList}}" wx:for-item="item">
-    <label data-index='{{index}}' data-reason='{{item.name}}' bindtap='chooseStoreTypeAction' class='store-list-label {{index == selectedIndex?"selected-store":"normal-store"}}' style='width:{{100/storeList.length}}%'>{{item.name}}</label>
+    <label data-index='{{index}}' data-reason='{{item.name}}' bindtap='chooseStoreTypeAction' class='store-list-label {{index == selectedIndex?"selected-store":"normal-store"}}'>{{item.name}}</label>
   </block>
 </view>
 <view class='desc-input'>

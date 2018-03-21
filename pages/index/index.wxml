@@ -1,5 +1,8 @@
 <view class='index_board_view'>
   <image class='index_tips' mode='aspectFit' src='/images/index/index_tips.png'></image>
   <image class='index_board' mode='aspectFit' src='/images/index/index_board.png'></image>
+  <view class='index_idea_tips'>
+  <label>收纳箱</label><label>迷你仓</label><label>智能储物柜</label>
+  </view>
   <label class='store_label' bindtap='intoStoreAction'>存物品</label>
 </view>

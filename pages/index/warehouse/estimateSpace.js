@@ -139,10 +139,12 @@ Page({
     this.setData({
       selectedIndex: 0,
       storeList: [
-        { name: '搬家/装修', id: 1 },
+        { name: '搬家', id: 1 },
         { name: '换季物品', id: 2 },
+        { name: '装修', id: 4 },
         { name: '闲置物品', id: 3 },
-        { name: '其他', id: 4 }
+        { name: '行李寄存', id: 5 },
+        { name: '其他', id: 6 }
       ],
       isShowReview: false,
       isOther: false
