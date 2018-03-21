@@ -1,15 +1,15 @@
 <view class='input-board-view'>
   <view>
     <label>姓名:</label>
-    <input bindinput='bindName'></input>
+    <input bindinput='bindName' placeholder='请输入姓名'></input>
   </view>
   <view>
     <label>联系电话:</label>
-    <input type='number' bindinput='bindTel'></input>
+    <input type='number' bindinput='bindTel' placeholder='请输入联系电话'></input>
   </view>
   <view>
     <label>详细地址:</label>
-    <input value='{{address}}' bindinput='bindAddress'></input>
+    <input value='{{address}}' bindinput='bindAddress' placeholder='请输入联系地址'></input>
   </view>
   <view>
     <label>有无电梯:</label>

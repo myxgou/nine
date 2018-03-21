@@ -8,12 +8,12 @@ Page({
   reason: '',
   identifier: '',
   storagepointID: '',
-  reviewTapAction: function() {
+  reviewTapAction: function () {
     this.setData({
       isShowReview: false
     })
   },
-  reviewAction: function(event) {
+  reviewAction: function (event) {
     let self = this;
     this.setData({
       isShowReview: true,
@@ -65,9 +65,9 @@ Page({
     });
     this.uploadedImages = 0;
     this.uploadImageAction();
-    
+
   },
-  uploadImageAction: function() {
+  uploadImageAction: function () {
     var data = {};
     let self = this;
     data['filePath'] = self.imageLists[this.uploadedImages];
@@ -91,7 +91,7 @@ Page({
         common.ui.showError('上传失败');
       }
     })
-    
+
   },
   chooseStoreTypeAction: function (event) {
     let index = event.target.dataset.index,
@@ -162,7 +162,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if(this.identifier.length > 0) {
+    if (this.identifier.length > 0) {
       return;
     }
     let self = this;

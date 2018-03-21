@@ -1,5 +1,6 @@
 <view class='sucess-board-view'>
-  <image class='notice-image' src='../../../images/common/paySucess.png'></image>
-  <label class='notice-tips'>信息提交成功,我们会在第一时间联系您.</label>
+  <image class='notice-image' src='../../../images/common/book-success.png'></image>
+  <label class='notice-title'>提交成功</label>
+  <label class='notice-tips'>我们会在第一时间联系您！</label>
   <button class='submit-button' bindtap='sureAction'>确定</button>
 </view>

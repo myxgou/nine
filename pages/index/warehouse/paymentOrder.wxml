@@ -8,21 +8,23 @@
       <label>不参与优惠金额:</label>
       <input placeholder='询问店员后输入' bindinput='bindPayExcludeAction' type='digit' value='0'></input>
     </view>
+
+  </view>
+
+  <view class='upon-board-view'>
     <view class='input-board-view'>
       <label>备注</label>
       <input placeholder='如:姓名,仓号等' bindinput='bindPayMarkAction'></input>
     </view>
+
   </view>
+</view>
+<view class='upon-tips-view'>
   <label class='fontRedColor'>优惠信息:{{uponInfo}}</label>
-  <view class='upon-board-view'>
-    <view class='input-board-view'>
-      <label>抵用券/优惠码</label>
-      <input placeholder='请选择' bindinput='bindPayCodeAction'></input>
-    </view>
-    <view class='input-board-view'>
-      <label>实付金额</label>
-      <input disabled='true' placeholder='￥:{{price}}' type='digit'></input>
-    </view>
-  </view>
+  <label class='fontGreenColor'>优惠说明</label>
+</view>
+<view class='input-board-view totalPrice'>
+  <label>实付金额</label>
+  <input disabled='true' placeholder='￥:{{price}}' type='digit'></input>
 </view>
 <button class='submit-button button-position' bindtap='paymentAction'>已确认,立即支付</button>

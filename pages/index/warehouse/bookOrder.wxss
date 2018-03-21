@@ -1,14 +1,20 @@
 @import "/utils/css/common.wxss";
+page {
+  background-color: #f7f7f7;
+}
 
 .book-board-view {
-  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
 }
 
 .choose-board-view {
   display: flex;
-  height: 30px;
   margin: 5px 0;
-  
+  height:43px;
+  line-height:43px;
+  align-items:center;
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .choose-board-view>label {
@@ -19,26 +25,22 @@
 .choose-board-view>view {
   flex: 1;
   display: flex;
-  border-bottom: 1px solid #b2b2b2;
 }
 
 .describe-board-view>textarea {
   margin-top:15px; 
   height: 80px;
-  border: 1px solid #b2b2b2;
   border-radius: 5px;
   padding: 5px;
   width: auto;
 }
 
 .next-board-view {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .next-board-view>label {
@@ -48,9 +50,8 @@
 }
 
 .next-board-view>button {
-  width: 100%;
-  border: none;
-  border-radius:0;
+  width: 90%;
+  margin-top: 10px;
 }
 
 .next-board-view>button::after {

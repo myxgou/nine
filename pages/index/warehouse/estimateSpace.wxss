@@ -1,6 +1,14 @@
 @import "/utils/css/common.wxss";
 @import "/utils/css/fullReview.wxss";
 
+page {
+  background-color: #f7f7f7;
+}
+
+.board-view {
+  background-color: #fff;
+}
+
 .describe-board-view {
   height: 170px;
   display: flex;
@@ -9,37 +17,45 @@
 }
 
 .desc-input {
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #b2b2b2;
+  height: 50px;
+  line-height: 50px;
   border-radius: 5px;
+  background-color: #fff;
+}
+
+.desc-input>textarea {
+  margin: 5px;
+  height: 40px;
+  max-height: 40px;
+  overflow: scroll;
 }
 
 .next-button {
-  position: fixed;
+  margin-top: 30px;
   width: 90%;
-  left: 5%;
-  bottom: 5px; 
 }
 
 .store-aim-board {
-  width: 100%;
-  margin: 10px 10px;
+  padding: 10px 10px;
   display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .store-list-label {
   display: block;
   height: 40px;
   line-height: 40px;
-  text-align: center; 
+  text-align: center;
+  width: 78px;
+  border-radius: 5px;
 }
 
 .pic-board-view {
   display: flex;
   flex-direction: row;
- }
+  background-color: #fff;
+}
 
 .comment-area {
   width: auto;
@@ -49,13 +65,13 @@
 
 .camera-board-view {
   width: 65px;
-  height: 65px;
+  height: 52px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px;
-  border:1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
 }
 
 .camera-add-image {
@@ -65,7 +81,7 @@
 
 .preview-list-scrollview {
   height: 60px;
-  white-space:nowrap;
+  white-space: nowrap;
   width: 100%;
 }
 
@@ -73,21 +89,19 @@
   width: 50px;
   height: 50px;
   margin: 5px;
-  display:inline-block;
+  display: inline-block;
   border: 1px solid red;
 }
 
-.selected-store{
-  color:#e64340;
-  border-bottom: 1px solid #e64340;
-}
-.normal-store {
-  color: #000000;
-  border-bottom: none;
+.selected-store {
+  color: #ff772d;
+  background-color: #fbddda;
 }
 
-.desc-input>input {
-  padding: 5px;
+.normal-store {
+  color: #333;
+  border: none;
+  border-color: #efefef;
 }
 
 .separate-line {
@@ -96,8 +110,21 @@
   background-color: #f4f4f4;
 }
 
+.store-board-view {
+  display: flex;
+  height: 33px;
+  align-items: center;
+  border:1px solid #f7f7f7;
+}
+
+.store-board-view image {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
 .store-tips {
-  color: #333333;
+  color: #333;
   font-size: 14px;
-  margin: 10px;
+  margin-left: 10px;
 }

@@ -42,7 +42,6 @@
   </view>
 </view>
 <view class='pay-board-view'>
-  <label class='pay-tips fontRedColor'>最高可享成交价的五折支付</label>
   <view class='pay-tab-board'>
     <view bindtap='paymentAction'>
       <image src='/images/common/payment.png'></image>

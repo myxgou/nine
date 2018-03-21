@@ -3,27 +3,29 @@
   <view class='describe-board-view'>
     <textarea class='comment-area' bindinput='bindDescAction' placeholder-class='comment-area-placeholder' placeholder='填写物品描述...'></textarea>
     <view class='pic-board-view'>
-    <view class='camera-board-view' bindtap='addCamera'>
-      <image class='camera-add-image' src='/images/common/add.png'></image>
-    </view>
-    <scroll-view scroll-x class='preview-list-scrollview' scroll-into-view='{{scrollToView}}'>
-      <block wx:for-items="{{imageLists}}" wx:for-item="item">
-        <image bindtap='reviewAction' bindlongtap='deleteAction' class='list-item-image' src='{{item}}' id='item{{index}}' mode='aspectFit' data-index='{{index}}' data-src='{{item}}'></image>
-      </block>
-    </scroll-view>
+      <view class='camera-board-view' bindtap='addCamera'>
+        <image class='camera-add-image' src='/images/common/add.png'></image>
+      </view>
+      <scroll-view scroll-x class='preview-list-scrollview' scroll-into-view='{{scrollToView}}'>
+        <block wx:for-items="{{imageLists}}" wx:for-item="item">
+          <image bindtap='reviewAction' bindlongtap='deleteAction' class='list-item-image' src='{{item}}' id='item{{index}}' mode='aspectFit' data-index='{{index}}' data-src='{{item}}'></image>
+        </block>
+      </scroll-view>
     </view>
   </view>
   <view class='separate-line'></view>
-  <label class='store-tips'>请选择存放目的</label>
-  <view class='store-aim-board'>
-    <block wx:for-items="{{storeList}}" wx:for-item="item">
-      <label data-index='{{index}}' data-reason='{{item.name}}' bindtap='chooseStoreTypeAction' class='store-list-label {{index == selectedIndex?"selected-store":"normal-store"}}' style='width:{{100/storeList.length}}%'>{{item.name}}</label>
-    </block>
+  <view class='store-board-view'>
+    <image src='/images/common/box.png'></image>
+    <label class='store-tips'>存放原因：</label>
   </view>
-  <view wx:if='{{isOther}}' class='desc-input'>
-    <input bindinput='bindReasonAction' placeholder='请输入其他存放目的'></input>
-  </view>
-
+</view>
+<view class='store-aim-board'>
+  <block wx:for-items="{{storeList}}" wx:for-item="item">
+    <label data-index='{{index}}' data-reason='{{item.name}}' bindtap='chooseStoreTypeAction' class='store-list-label {{index == selectedIndex?"selected-store":"normal-store"}}' style='width:{{100/storeList.length}}%'>{{item.name}}</label>
+  </block>
+</view>
+<view class='desc-input'>
+  <textarea disabled='{{!isOther}}' bindinput='bindReasonAction' placeholder='其他原因'></textarea>
 </view>
 
 <button class='submit-button next-button' bindtap='nextAction'>下一步</button>
